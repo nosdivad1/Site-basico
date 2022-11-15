@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.test {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "cabecalho1 cabecalho2";
+}
+
+.test2 {
+  border: 1px solid black;
+}
+
+.test3 {
+  border: 1px solid black;
+}
+
+.prestador {
+  margin-top: 1px;
+  display: grid;
+  grid-template-columns: 0.14fr 1fr 1fr;
+  grid-template-rows: 0.1fr 1.9fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "vazio linha-2 linha-2"
+    "vazio linha linha";
+}
+
+.vazio {
+  border: 1px solid black;
+  grid-area: vazio;
+}
+
+.linha-2 {
+  border: 1px solid black;
+  grid-area: linha;
+  padding-left: 7px;
+}
+
+.linha {
+  border: 1px solid black;
+  grid-area: linha-2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  padding-left: 7px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+  list-style: none;
+  font-weight: bolder;
+  vertical-align: middle;
+}
+
+.n_nota {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 10px;
+  text-align: center;
+  list-style: none;
+  font-weight: bolder;
+}
+
+.S_eletronica {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+.lista_prestador {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+
+.span_prestador {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 120px;
+}
+
+.identificacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "identificacao_nota identificacao_nota identificacao_nota qr_code"
+    "natureza data codigo qr_code"
+    ". . . .";
+}
+
+.natureza {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  border: 1px solid black;
+  grid-area: natureza;
+}
+
+.data {
+  border: 1px solid black;
+  grid-area: data;
+}
+
+.codigo {
+  border: 1px solid black;
+  grid-area: codigo;
+}
+
+.qr_code {
+  border: 1px solid black;
+  grid-area: qr_code;
+}
+
+.identificacao_nota {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  border: 1px solid black;
+  padding-left: 7px;
+  grid-area: identificacao_nota;
+}
+
+.tomador {
+  margin-top: 0.5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.9fr 1.1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "dados_tomador dados_tomador dados_tomador dados_tomador dados_tomador dados_tomador dados_tomador"
+    "cnpj cnpj inscricao_estadual inscricao-municipal razao_social razao_social razao_social"
+    "endereco endereco numero complemento complemento bairro bairro"
+    "cep cidade cidade uf telefone email email";
+}
+
+.dados_tomador {
+  border: 1px solid black;
+  grid-area: dados_tomador;
+}
+
+.cnpj {
+  border: 1px solid black;
+  grid-area: cnpj;
+}
+
+.inscricao_estadual {
+  border: 1px solid black;
+  grid-area: inscricao_estadual;
+}
+
+.inscricao-municipal {
+  border: 1px solid black;
+  grid-area: inscricao-municipal;
+}
+
+.razao_social {
+  border: 1px solid black;
+  grid-area: razao_social;
+}
+
+.endereco {
+  border: 1px solid black;
+  grid-area: endereco;
+}
+
+.numero {
+  border: 1px solid black;
+  grid-area: numero;
+}
+
+.complemento {
+  border: 1px solid black;
+  grid-area: complemento;
+}
+
+.bairro {
+  border: 1px solid black;
+  grid-area: bairro;
+}
+
+.cep {
+  border: 1px solid black;
+  grid-area: cep;
+}
+
+.cidade {
+  border: 1px solid black;
+  grid-area: cidade;
+}
+
+.uf {
+  border: 1px solid black;
+  grid-area: uf;
+}
+
+.telefone {
+  border: 1px solid black;
+  grid-area: telefone;
+}
+
+.email {
+  border: 1px solid black;
+  grid-area: email;
+}
+
+.servicos {
+  margin-top: 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.8fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "descricao descricao descricao"
+    "descricao_servicos descricao_servicos descricao_servicos"
+    "valor_total valor_total valor_total";
+}
+
+.descricao {
+  border: 1px solid black;
+  grid-area: descricao;
+}
+
+.descricao_servicos {
+  height: 220px;
+  border: 1px solid black;
+  grid-area: descricao_servicos;
+}
+
+.valor_total {
+  padding-top: 4px;
+  padding-right: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: right;
+  border: 1px solid black;
+  grid-area: valor_total;
+}
+
+.imposto {
+  display: grid;
+  grid-template-columns: 2.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0.2fr 1fr 1.8fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "imposto_servicos imposto_servicos imposto_servicos imposto_servicos"
+    "atividade aliquota item cnae"
+    "valor_servicos valor_servicos cifrao preco";
+}
+
+.imposto_servicos {
+  border: 1px solid black;
+  grid-area: imposto_servicos;
+}
+
+.atividade {
+  border: 1px solid black;
+  grid-area: atividade;
+}
+
+.aliquota {
+  border: 1px solid black;
+  grid-area: aliquota;
+}
+
+.item {
+  border: 1px solid black;
+  grid-area: item;
+}
+
+.cnae {
+  border: 1px solid black;
+  grid-area: cnae;
+}
+
+.valor_servicos {
+  border: 1px solid black;
+  grid-area: valor_servicos;
+}
+
+.cifrao {
+  border: 1px solid black;
+  grid-area: cifrao;
+}
+
+.preco {
+  border: 1px solid black;
+  grid-area: preco;
+}
